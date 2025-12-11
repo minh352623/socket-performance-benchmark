@@ -1,0 +1,24 @@
+{
+  "token_hmac_secret_key": "secret",
+  "admin_password": "admin",
+  "admin_secret": "admin_secret",
+  "api_key": "api_key",
+  "allowed_origins": [
+    "http://localhost:3000"
+  ],
+  "websocket": {
+        "read_buffer_size": 512
+  },
+  "namespaces": [
+    {
+      "name": "benchmark",
+      "publish": true,
+      "presence": true,
+      "history_size": 10,
+      "history_ttl": "300s",
+      "allow_subscribe_for_client": true,
+      "allow_presence_for_subscriber": true,
+      "allow_presence_for_client": true
+    }
+  ]
+}
